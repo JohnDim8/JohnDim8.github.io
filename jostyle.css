@@ -1,0 +1,252 @@
+    html, body {
+      overflow-x: hidden;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .banner {
+      background-color: #db871ae0;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .banner-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .banner-subtitle {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 70px);
+      position: relative;
+      padding: 2rem 0;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 8rem;
+    }
+
+    .side-banner {
+      position: absolute;
+      top: calc(4rem + 2rem);
+      height: calc(100vh - (3rem + 2rem));
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .left-banner {
+      left: 0;
+      width: 296px;
+    }
+
+    .left-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .right-banner {
+      right: 0;
+      width: 379px;
+      height: calc(100vh - (4rem + 2rem));
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .right-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .side-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .fade-divider {
+      position: absolute;
+      width: 2px;
+      top: 5%;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to bottom, transparent, #db881a, transparent);
+      z-index: 2;
+    }
+
+    .left, .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left {
+      align-items: flex-end;
+    }
+
+    .right {
+      align-items: flex-start;
+    }
+
+    .left .inner {
+      margin-right: 5rem;
+      text-align: center;
+    }
+
+    .right .inner {
+      margin-left: 5rem;
+      text-align: left;
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    .section h4 {
+      margin-top: 0.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .section ul {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .section a {
+      margin-top: 0.3rem;
+      display: inline-block;
+    }
+
+    .email-button{
+      display: inline-block;
+      background-color: #db871ae0;
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 80px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .email-button:hover {
+      background-color: #db871a;
+      transform: scale(1.03);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      margin: 1rem 0;
+    }
+
+    .text-link {
+      font-size: 1rem;
+      color: #000000;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .text-link:hover {
+      color: #db871a;
+    }
+
+    .footer {
+      position: relative;
+      bottom: 40px;
+      left: 86%;
+      font-size: 1.05rem;
+      color: #555;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #db871a;
+    }
+
+    .snippets-section {
+      display: flex;
+      margin-top: 1rem;      
+      margin-left: 6rem; 
+      margin-right: 158px;  
+      text-align: left;  
+    }
+
+    .snippet-intro {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      gap: 0.3rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      color: #a16414f5;
+      transform: translate(-260px, 0px);
+    }
+
+    .snippet-intro p {
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .snippet-intro .arrow-img {
+      width: 60px;
+      height: auto;
+    }
+
+    .audio-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .audio-box li {
+      margin-bottom: 0px;
+    }
